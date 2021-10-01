@@ -1,0 +1,76 @@
+.post {
+  margin: 15px 0;
+  border: 1px solid #dedede;
+  border-radius: 5px;
+
+  img {
+    width: 100%;
+    object-fit: contain;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+
+    &__left {
+      display: flex;
+      align-items: center;
+
+      &-name {
+        h3,
+        p {
+          margin: 0;
+          padding-left: 15px;
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+
+  &__footerIcon {
+    width: 100%;
+    display: flex;
+    padding: 10px 15px 10px 0;
+    border-bottom: 1px solid #dedede;
+
+    &__left {
+      flex: 1;
+      display: flex;
+      justify-content: flex-start;
+
+      .MuiSvgIcon-root {
+        margin-left: 15px;
+      }
+    }
+
+    &__right {
+      flex: 1;
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+
+  &__comment {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+
+    input {
+      border: none;
+      outline: none;
+      flex: 1;
+      margin-left: 15px;
+    }
+
+    button {
+      background: none;
+      border: none;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: rgb(93, 147, 240);
+      cursor: pointer;
+    }
+  }
+}

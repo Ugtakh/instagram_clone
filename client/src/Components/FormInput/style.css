@@ -1,0 +1,19 @@
+.form_group {
+  width: 100%;
+}
+
+.form_input {
+  background: none;
+  background-color: white;
+  color: gray;
+  font-size: 18px;
+  padding: 15px 20px;
+  display: block;
+  width: 100%;
+  border: none;
+  border-radius: 0;
+  border: 1px solid gray;
+  border-radius: 10px;
+  margin: 25px 0;
+  outline: none;
+}
