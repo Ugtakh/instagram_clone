@@ -1,0 +1,14 @@
+name: Test  Continues and Integration
+
+on:
+  pull-request: [master]
+
+build:
+  runs-on: ubuntu-latest
+  steps:
+    - uses: actions/checkoutv@2
+    - name: Setup Node Dependencies
+    - run: npm
+    - name: Start serverless application
+    - run: npm start
+    - run: echo Test completed
