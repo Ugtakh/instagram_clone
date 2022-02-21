@@ -9,6 +9,7 @@ jobs:
     steps:
       - uses: actions/checkoutv@2
       - name: Setup Node Dependencies
+      - run: cd ./client/
       - run: npm install
       - name: Start serverless application
       - run: npm start
