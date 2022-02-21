@@ -3,12 +3,13 @@ name: Test  Continues and Integration
 on:
   push: [main]
 
-build:
-  runs-on: ubuntu-latest
-  steps:
-    - uses: actions/checkoutv@2
-    - name: Setup Node Dependencies
-    - run: npm install
-    - name: Start serverless application
-    - run: npm start
-    - run: echo Test completed
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkoutv@2
+      - name: Setup Node Dependencies
+      - run: npm install
+      - name: Start serverless application
+      - run: npm start
+      - run: echo Test completed
