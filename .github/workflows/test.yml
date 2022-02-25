@@ -13,4 +13,6 @@ jobs:
       - run: npm install
       - name: Start serverless application
       - run: npm start
+      - wait-on: "http://localhost:3000"
+      - wait-on-timeout: 120
       - run: echo Test completed
